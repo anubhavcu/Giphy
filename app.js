@@ -59,7 +59,7 @@ function loadNewImage() {
   document.getElementById("img").src = "";
   document.getElementById("loader").style.display = "block";
   let number1 = Math.floor(Math.random() * 25) + 1;
-  fetch(`http://api.giphy.com/v1/gifs/search?&q=${key}&api_key=${api_key}`)
+  fetch(`https://api.giphy.com/v1/gifs/search?&q=${key}&api_key=${api_key}`)
     .then(res => res.json())
     .then(json => {
       setTimeout(() => {
